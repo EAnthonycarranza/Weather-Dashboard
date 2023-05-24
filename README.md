@@ -46,6 +46,7 @@ cd weather-dashboard
 ## API Key
 
 This application uses the OpenWeatherMap API to fetch weather data. You need to provide an API key to fetch the data successfully. Obtain an API key by creating an account on the [OpenWeatherMap website](https://openweathermap.org/) and following the API documentation.
+In this case, the API is already provided in the JavaScript code itself.
 
 Once you have obtained an API key, replace the `apiKey` variable in the `script.js` file with your API key.
 
