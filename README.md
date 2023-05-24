@@ -17,7 +17,7 @@ You can try out the live demo of the Weather Dashboard [here](<insert-link-to-li
 
 ## Screenshot
 
-![Weather Dashboard Screenshot](./Assets/Screenshot 2023-05-24 at 3.51.09 PM.png)
+![Weather Dashboard Screenshot](./Assets/Screenshot%202023-05-24%20at%203.51.09%20PM.png)
 
 ## Usage
 
