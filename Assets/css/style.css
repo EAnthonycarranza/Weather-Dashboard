@@ -1,0 +1,313 @@
+/* Styling for the body of the webpage */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #007bff, #ffffff);
+  background-attachment: fixed;
+  text-align: center;
+}
+
+/* Styling for the header of the webpage */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for the h1 in the header */
+header h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the timer in the header */
+header #timer {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the header link */
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Styling for the header link on hover */
+header a:hover {
+  text-decoration: underline;
+}
+
+
+/* Styling for the main area of the webpage */
+main {
+  padding: 20px;
+}
+
+/* Styling for the dashboard container */
+#dashboard-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styling for the timer */
+#timer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/* Styling for the search container */
+#search-container {
+  margin-top: 20px;
+}
+
+/* Styling for the headers in the search and history containers */
+#search-container h2,
+#history-container h2 {
+  margin-top: 0;
+}
+
+/* Styling for the search form */
+#search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Styling for the text input in the search form */
+#search-form input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the button in the search form */
+#search-form button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  max-width: 300px;
+  cursor: pointer;
+}
+
+/* Styling for the hover state of the button in the search form */
+#search-form button:hover {
+  background-color: #555;
+}
+
+/* Styling for the history container */
+#history-container {
+  margin-top: 10px;
+}
+
+/* Styling for the search history list */
+#search-history {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Styling for the list items in the search history */
+#search-history li {
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* Styling for the hover state of the list items in the search history */
+#search-history li:hover {
+  background-color: #f5f5f5;
+
+}
+
+/* Styling for the headers in the current weather and forecast containers */
+#current-weather-container h2,
+#forecast-container h2 {
+  text-align: center;
+}
+
+/* Styling for the current weather and forecast containers */
+#current-weather-container,
+#forecast-container {
+  margin-bottom: 20px;
+}
+
+/* Styling for the weather cards */
+.weather-card {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/* Styling for the headers in the weather cards */
+.weather-card h3 {
+  margin: 0;
+}
+
+/* Styling for the images in the weather cards */
+.weather-card img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Styling for the temperature in the weather cards */
+.weather-card .temp {
+  font-weight: bold;
+}
+
+/* Styling for the humidity and wind speed in the weather cards */
+.weather-card .humidity,
+.weather-card .wind-speed {
+  margin: 0;
+}
+
+/* Media Query for smaller screens */
+@media screen and (min-width: 930px) and (max-height: 850px) {
+  /* Styling for the body for smaller screens */
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Styling for the header for smaller screens */
+  header {
+    padding-bottom: 0;
+  }
+
+  /* Styling for the main area for smaller screens */
+  main {
+    padding: 20px;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  /* Styling for the dashboard container for smaller screens */
+  #dashboard-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Styling for the search container for smaller screens */
+  #search-container {
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-top: 0;
+  }
+
+  /* Styling for the search form for smaller screens */
+  #search-form {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Styling for the text input in the search form for smaller screens */
+  #search-form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  /* Styling for the button in the search form for smaller screens */
+  #search-form button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  /* Styling for the hover state of the button in the search form for smaller screens */
+  #search-form button:hover {
+    background-color: #555;
+  }
+
+  /* Styling for the history container for smaller screens */
+  #history-container {
+    margin-top: 10px;
+  }
+
+  /* Styling for the search history list for smaller screens */
+  #search-history {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  /* Styling for the list items in the search history for smaller screens */
+  #search-history li {
+    cursor: pointer;
+    padding: 4px;
+  }
+
+  /* Styling for the hover state of the list items in the search history for smaller screens */
+  #search-history li:hover {
+    background-color: #f5f5f5;
+  }
+
+  /* Styling for the current weather and forecast containers for smaller screens */
+  #current-weather-container,
+  #forecast-container {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Styling for the weather dashboard for smaller screens */
+  #weather-dashboard {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Styling for the forecast for smaller screens */
+  #forecast {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  /* Styling for the weather cards for smaller screens */
+  .weather-card {
+    flex-basis: calc(20% - 20px);
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+  }
+}
+
+/* Styling for the current weather container weather cards */
+#current-weather-container .weather-card {
+  background: rgb(2,0,36);
+  background: linear-gradient(to top, #007bff, #ffffff);
+  background-attachment: fixed;
+}
+
+/* Styling for the forecast weather cards */
+#forecast .weather-card {
+  background: linear-gradient(to top, #007bff, #ffffff);
+  background-attachment: fixed;
+  border:1px solid black;
+}

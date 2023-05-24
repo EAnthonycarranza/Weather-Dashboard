@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" type="text/css" href="./Assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Weather Dashboard</h1>
+    <p id="timer"></p>
+    <!-- The p tag is defining a paragraph and it has an id named "timer", 
+         used for displaying the current time using JavaScript -->
+  </header>
+
+  <main>
+    <div id="dashboard-container">
+      <!-- This is the container for the weather dashboard. -->
+
+      <div id="weather-dashboard">
+        <!-- The div that contains the main weather information -->
+
+        <div id="current-weather-container">
+          <h2>Current Weather</h2>
+          <div id="current-weather"></div>
+          <!-- This div is used to display the current weather data -->
+        </div>
+
+        <div id="forecast-container">
+          <h2>5-Day Forecast</h2>
+          <div id="forecast"></div>
+          <!-- This div is used to display the forecast for the next five days -->
+        </div>
+
+      </div>
+    </div>
+
+    <div id="search-container">
+      <!-- This container contains a search feature where users can search for weather data for a specific city -->
+
+      <h2>Search</h2>
+      
+      <form id="search-form">
+        <!-- Forms are used to collect user inputs -->
+
+        <input type="text" id="city-input" placeholder="Enter a city">
+        <!-- This input field takes the name of the city that the user wants to search -->
+
+        <button type="submit">Search</button>
+        <!-- The button is used to submit the form -->
+      </form>
+
+      <div id="history-container">
+        <!-- This container is used for displaying the search history -->
+
+        <h2>Search History</h2>
+        <ul id="search-history"></ul>
+        <!-- The ul tag is used for unordered lists that will contain a list of previously searched cities -->
+      </div>
+      
+    </div>
+  </main>
+
+  <script src="./Assets/js/script.js"></script>
+</body>
+</html>
