@@ -13,7 +13,7 @@ The Weather Dashboard includes the following features:
 
 ## Live Demo
 
-You can try out the live demo of the Weather Dashboard [here](<insert-link-to-live-demo>).
+You can try out the live demo of the Weather Dashboard [here!](https://eanthonycarranza.github.io/Weather-Dashboard/).
 
 ## Screenshot
 
