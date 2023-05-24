@@ -4,6 +4,8 @@ const cityInput = document.getElementById('city-input');
 const searchHistory = document.getElementById('search-history');
 const currentWeatherContainer = document.getElementById('current-weather');
 const forecastContainer = document.getElementById('forecast');
+const searchButton = document.getElementById('search-button');
+
 
 // Initialize an empty array to store the search history
 // This is empty initially and will be updated as the user searches for cities
@@ -23,6 +25,8 @@ searchForm.addEventListener('submit', function (event) {
 searchHistory.addEventListener('click', function (event) {
   const city = event.target.innerText;
   getWeatherData(city);
+    // Scroll to the top of the page
+    window.location.href = "#top";
 });
 
 // Function to fetch weather data from the OpenWeatherMap API
@@ -158,6 +162,21 @@ function updateTimer() {
   const formattedDate = currentDate.toLocaleDateString(undefined, options);
   timerElement.textContent = formattedDate;
 }
+
+// Add an event listener to the button that triggers when it's clicked
+searchButton.addEventListener('click', function(event) {
+  setTimeout(function() {
+      // Scroll the window to the top of the page
+      // Here, I'm using setTimeout to delay the scroll action
+      // I'm using 0 to run the code as soon as the stack is clear
+      window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: 'smooth'
+      });
+  }, 0);
+});
+
 
 // Update the timer every second
 setInterval(updateTimer, 1000);
