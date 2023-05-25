@@ -17,7 +17,7 @@ You can try out the live demo of the Weather Dashboard [here!](https://eanthonyc
 
 ## Screenshot
 
-![Weather Dashboard Screenshot](./Assets/./Assets/Screenshot%20Capture%20-%202023-05-24%20-%2016-07-58.png)
+![Weather Dashboard Screenshot](./Assets/Screenshot%20Capture%20-%202023-05-24%20-%2016-07-58.png)
 
 ## Usage
 
