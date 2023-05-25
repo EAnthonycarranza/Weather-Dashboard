@@ -1,8 +1,11 @@
+/* === BASIC LAYOUT AND GLOBAL STYLES === */
+
+/* Smooth scrolling throughout the webpage */
 html {
   scroll-behavior: smooth;
 }
 
-/* Styling for the body of the webpage */
+/* General styling for the entire webpage */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -11,6 +14,8 @@ body {
   background-attachment: fixed;
   text-align: center;
 }
+
+/* === HEADER STYLES === */
 
 /* Styling for the header of the webpage */
 header {
@@ -44,6 +49,7 @@ header a:hover {
   text-decoration: underline;
 }
 
+/* === MAIN CONTENT STYLES === */
 
 /* Styling for the main area of the webpage */
 main {
@@ -74,6 +80,8 @@ main {
   margin-top: 0;
 }
 
+/* === SEARCH FORM STYLES === */
+
 /* Styling for the search form */
 #search-form {
   display: flex;
@@ -103,12 +111,15 @@ main {
   width: 100%;
   max-width: 300px;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 /* Styling for the hover state of the button in the search form */
 #search-form button:hover {
   background-color: #555;
 }
+
+/* === HISTORY CONTAINER STYLES === */
 
 /* Styling for the history container */
 #history-container {
@@ -133,8 +144,9 @@ main {
 /* Styling for the hover state of the list items in the search history */
 #search-history li:hover {
   background-color: #f5f5f5;
-
 }
+
+/* === WEATHER DISPLAY STYLES === */
 
 /* Styling for the headers in the current weather and forecast containers */
 #current-weather-container h2,
@@ -145,7 +157,7 @@ main {
 /* Styling for the current weather and forecast containers */
 #current-weather-container,
 #forecast-container {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /* Styling for the weather cards */
@@ -154,6 +166,7 @@ main {
   padding: 10px;
   border-radius: 4px;
   border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Styling for the headers in the weather cards */
@@ -178,27 +191,31 @@ main {
   margin: 0;
 }
 
-/* Media Query for smaller screens */
-@media screen and (min-width: 930px) and (max-height: 850px) {
-  /* Styling for the body for smaller screens */
+/* === MEDIA QUERY FOR LARGER SCREENS === */
+
+/* This section contains styles for larger screens (screens wider than 735px) */
+
+@media screen and (min-width: 735px) {
+
+  /* General layout adjustments for larger screens */
   body {
     display: flex;
     flex-direction: column;
   }
 
-  /* Styling for the header for smaller screens */
+  /* Adjustments to the header padding for larger screens */
   header {
     padding-bottom: 0;
   }
 
-  /* Styling for the main area for smaller screens */
+  /* Adjustments to the main area layout for larger screens */
   main {
     padding: 20px;
     display: flex;
     flex-grow: 1;
   }
 
-  /* Styling for the dashboard container for smaller screens */
+  /* Adjustments to the dashboard container layout for larger screens */
   #dashboard-container {
     flex: 1;
     display: flex;
@@ -206,7 +223,7 @@ main {
     justify-content: center;
   }
 
-  /* Styling for the search container for smaller screens */
+  /* Search container layout and alignment adjustments for larger screens */
   #search-container {
     flex-basis: 200px;
     display: flex;
@@ -216,74 +233,72 @@ main {
     margin-top: 0;
   }
 
-  /* Styling for the search form for smaller screens */
+  /* Adjustments to the search form layout for larger screens */
   #search-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
-  /* Styling for the text input in the search form for smaller screens */
-  #search-form input[type="text"] {
+  /* Adjustments to the input and button styles within the search form for larger screens */
+  #search-form input[type="text"], #search-form button {
     padding: 8px;
     font-size: 16px;
     border-radius: 4px;
     border: 1px solid #ccc;
   }
 
-  /* Styling for the button in the search form for smaller screens */
+  /* Button specific styles within the search form for larger screens */
   #search-form button {
-    padding: 8px 16px;
-    font-size: 16px;
-    border-radius: 4px;
     border: none;
     background-color: #333;
     color: #fff;
-    margin-left: 10px;
+    margin-top: 10px;
     cursor: pointer;
   }
 
-  /* Styling for the hover state of the button in the search form for smaller screens */
+  /* Hover effect for the button within the search form for larger screens */
   #search-form button:hover {
     background-color: #555;
   }
 
-  /* Styling for the history container for smaller screens */
+  /* Styling for the history container for larger screens */
   #history-container {
     margin-top: 10px;
   }
 
-  /* Styling for the search history list for smaller screens */
+  /* Styling for the search history list for larger screens */
   #search-history {
     list-style: none;
     padding: 0;
     margin-left: 0;
   }
 
-  /* Styling for the list items in the search history for smaller screens */
+  /* Styling for the list items in the search history for larger screens */
   #search-history li {
     cursor: pointer;
     padding: 4px;
   }
 
-  /* Styling for the hover state of the list items in the search history for smaller screens */
+  /* Hover effect for the list items in the search history for larger screens */
   #search-history li:hover {
     background-color: #f5f5f5;
   }
 
-  /* Styling for the current weather and forecast containers for smaller screens */
+  /* Adjustments to the weather containers for larger screens */
   #current-weather-container,
   #forecast-container {
     flex-basis: 100%;
     margin-bottom: 20px;
   }
 
-  /* Styling for the weather dashboard for smaller screens */
+  /* Styling for the weather dashboard for larger screens */
   #weather-dashboard {
     flex-basis: 100%;
     margin-bottom: 20px;
   }
 
-  /* Styling for the forecast for smaller screens */
+  /* Layout adjustments for the forecast container for larger screens */
   #forecast {
     display: flex;
     justify-content: space-between;
@@ -291,7 +306,7 @@ main {
     overflow-x: auto;
   }
 
-  /* Styling for the weather cards for smaller screens */
+  /* Styling for the weather cards for larger screens */
   .weather-card {
     flex-basis: calc(20% - 20px);
     margin-right: 20px;
@@ -299,8 +314,13 @@ main {
     padding: 10px;
     border-radius: 4px;
     border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 }
+
+/* === WEATHER CARD STYLES === */
+
+/* This section contains the specific styles for the weather cards within different containers */
 
 /* Styling for the current weather container weather cards */
 #current-weather-container .weather-card {
@@ -315,3 +335,126 @@ main {
   background-attachment: fixed;
   border:1px solid black;
 }
+
+/* === MEDIA QUERY FOR SMALLER SCREENS === */
+
+/* This section contains styles for smaller screens (screens wider than 735px and shorter than 800px) */
+
+@media screen and (min-width: 735px) and (min-height: 845px) {
+
+  /* Main area layout adjustments for smaller screens */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
+
+  /* Dashboard container layout adjustments for smaller screens */
+  #dashboard-container {
+    order:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Weather container layout adjustments for smaller screens */
+  #current-weather-container,
+  #forecast-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Current weather and forecast layout adjustments for smaller screens */
+  #current-weather,
+  #forecast {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Spacing adjustments for smaller screens */
+  #current-weather, #top, #search-history {
+    margin-bottom: 100px;
+  }
+
+  /* Search container layout adjustments for smaller screens */
+  #search-container {
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; /* centers the element */
+  }
+
+  /* Search form layout adjustments for smaller screens */
+  #search-form {
+    align-items: center;
+  }
+
+  /* History container layout adjustments for smaller screens */
+  #history-container {
+    align-items: center;
+  }
+
+  /* Weather card specific styles for smaller screens */
+  .weather-card {
+    width: 800px; /* Adjust as necessary */
+    font-size: 51px; /* Increase font size for better readability */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  /* Font size adjustments for headers on smaller screens */
+  #current-weather-container h2, 
+  #forecast-container h2,
+  header h1 {
+    font-size: 80px; /* Adjust as necessary */
+  }
+
+  /* Font size adjustments for specific elements on smaller screens */
+  header #timer, 
+  #search-history,
+  #history-container h2,
+  #search-container {
+    font-size: 40px;
+  }
+
+  /* Spacing adjustments for the search history list items on smaller screens */
+  #search-history li {
+    margin-bottom: 45px;
+  }
+
+  /* Border adjustments for the search history list on smaller screens */
+  #search-history {
+    border: solid rgba(253, 253, 253, 0.41);
+  }
+
+  /* Styling for the images in the weather cards for smaller screens */
+  .weather-card img {
+    margin: auto ;
+    height: 150px;
+    width: 150px;
+  }
+
+  /* Styling for the buttons in the search form and the random city button for smaller screens */
+  #search-form button,
+  .randomCityBtn {
+    font-size: 24px; /* Increase font size */
+    padding: 15px 40px; /* Increase padding */
+    width: 300px; /* Increase width */
+    margin-bottom: 50px;
+  }
+
+  /* Styling for the text input in the search form for smaller screens */
+  #search-form input[type="text"] {
+    font-size: 30px; /* Increase font size */
+    padding: 25px; /* Increase padding */
+    width: 90%; /* Increase width */
+    text-align: center; /* Center the text */
+    margin-bottom: 50px;
+  }
+}
+
