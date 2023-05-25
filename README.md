@@ -22,7 +22,7 @@ You can try out the live demo of the Weather Dashboard [here!](https://eanthonyc
 
 ## Usage
 
-1. Enter a City: In the search input field, enter the name of the city for which you want to view the weather conditions.
+1. Enter a City: In the search input field, enter the name of the city for which you want to view the weather conditions. (Optional: Click on the "Random City" button to view the forecast instead of inputting in search).
 2. Submit the Form: Click the "Search" button or press Enter to submit the form and fetch the weather data for the entered city.
 3. View Current Weather: The current weather conditions for the searched city will be displayed, including the city name, date, weather icon, temperature, humidity, and wind speed.
 4. View 5-Day Forecast: The forecast for the next five days will be shown, displaying the date, weather icon, temperature, humidity, and wind speed for each day.
