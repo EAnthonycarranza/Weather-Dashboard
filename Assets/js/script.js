@@ -5,7 +5,61 @@ const searchHistory = document.getElementById('search-history');
 const currentWeatherContainer = document.getElementById('current-weather');
 const forecastContainer = document.getElementById('forecast');
 const searchButton = document.getElementById('search-button');
+const randomCityBtn = document.getElementById('randomCityBtn');
 
+// List of cities for the random city generator
+let cities = [
+  "New York", "London", "Berlin", "Tokyo", "Paris", "Sydney", 
+  "Rio de Janeiro", "Moscow", "Rome", "Dubai", "Beijing", 
+  "Cairo", "Cape Town", "Chicago", "Delhi", "Hong Kong", 
+  "Istanbul", "Jerusalem", "Las Vegas", "Los Angeles", "Madrid", 
+  "Melbourne", "Mexico City", "Miami", "Munich", "Nairobi", 
+  "Osaka", "Ottawa", "Saint Petersburg", "San Francisco", 
+  "Santiago", "São Paulo", "Shanghai", "Singapore", "Toronto", 
+  "Vancouver", "Vienna", "Washington, D.C.", "Zurich", "Athens", 
+  "Amsterdam", "Edinburgh", "Manchester", "Cardiff", "Stockholm", 
+  "Helsinki", "Oslo", "Copenhagen", "Lisbon", "Buenos Aires", 
+  "Brasília", "Montevideo", "Lima", "Quito", "Bogotá", 
+  "Kingston", "Havana", "Algiers", "Accra", "Nouakchott", 
+  "Dakar", "Lagos", "Nairobi", "Addis Ababa", "Cape Town", 
+  "Johannesburg", "Windhoek", "Libreville", "Yaounde", "Kinshasa", 
+  "Luanda", "Maputo", "Antananarivo", "Port Louis", "Victoria", 
+  "Jakarta", "Kuala Lumpur", "Bangkok", "Hanoi", "Manila", 
+  "Dhaka", "Karachi", "Colombo", "Mumbai", "Kolkata", 
+  "Chennai", "Bangalore", "Hyderabad", "Pune", "Ahmedabad", 
+  "Kathmandu", "Thimphu", "Male", "Colombo", "Seoul", 
+  "Taipei", "Ulaanbaatar", "Hanoi", "Vientiane", "Phnom Penh", 
+  "Canberra", "Wellington", "Suva", "Nuku'alofa", "Port Moresby", 
+  "Honolulu"
+];
+
+// Get weather data when search button is clicked
+searchButton.addEventListener('click', function() {
+  getWeatherData(cityInput.value);
+  window.setTimeout(function(){
+    window.location = '#top';
+  }, 0);
+});
+
+// Fetch weather for a random city when the Random City button is clicked
+randomCityBtn.addEventListener('click', function() {
+  let randomCity = cities[Math.floor(Math.random() * cities.length)];
+  cityInput.value = randomCity;
+  getWeatherData(randomCity);
+  window.setTimeout(function(){
+    window.location = '#top';
+  }, 0);
+});
+
+
+// Function to get weather data
+function getWeatherData(city) {
+}
+
+// Function to generate a random city
+function randomCity() {
+  return cities[Math.floor(Math.random() * cities.length)];
+}
 
 // Initialize an empty array to store the search history
 // This is empty initially and will be updated as the user searches for cities
