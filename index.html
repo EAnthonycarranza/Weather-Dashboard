@@ -8,6 +8,7 @@
 <body>
   <header id="top">
     <h1>Weather Dashboard</h1>
+    <!-- id top is representative to the top of the webpage where the Weather Dashboard header is-->
     <p id="timer"></p>
     <!-- The p tag is defining a paragraph and it has an id named "timer", 
          used for displaying the current time using JavaScript -->
@@ -37,9 +38,9 @@
 
     <div id="search-container">
       <!-- This container contains a search feature where users can search for weather data for a specific city -->
-
-      <h2>Search</h2>
       
+      <h2>Search</h2>
+
       <form id="search-form">
         <!-- Forms are used to collect user inputs -->
 
@@ -48,6 +49,10 @@
 
         <button type="submit" id="search-button">Search</button>
         <!-- The button is used to submit the form -->
+
+        <button type="button" id="randomCityBtn" class="randomCityBtn">Random City</button>
+        <!-- The button is used to populate the search input with a random city -->
+
       </form>
 
       <div id="history-container">
@@ -64,3 +69,4 @@
   <script src="./Assets/js/script.js"></script>
 </body>
 </html>
+
