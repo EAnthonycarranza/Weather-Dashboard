@@ -8,6 +8,7 @@ The Weather Dashboard includes the following features:
 
 - Current Weather: Displays the current weather conditions for the searched city, including the city name, date, weather icon, temperature, humidity, and wind speed.
 - 5-Day Forecast: Provides a forecast for the next five days, showing the date, weather icon, temperature, humidity, and wind speed for each day.
+- Random City: Allows the user to search for a random city to view the forecast.
 - Search History: Keeps track of the previously searched cities and allows users to click on a city in the search history to view its current and future weather conditions.
 - Responsive Design: The dashboard is responsive and adapts to different screen sizes, providing a great viewing experience on different kinds of devices.
 
