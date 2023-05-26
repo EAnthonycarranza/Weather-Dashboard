@@ -338,7 +338,7 @@ main {
 
 /* === MEDIA QUERY FOR SMALLER SCREENS === */
 
-/* This section contains styles for smaller screens (screens wider than 735px and shorter than 800px) */
+/* This section contains styles for smaller screens (screens wider than 735px and shorter than 935px) */
 
 @media screen and (min-width: 735px) and (min-height: 931px) {
 
