@@ -340,7 +340,7 @@ main {
 
 /* This section contains styles for smaller screens (screens wider than 735px and shorter than 800px) */
 
-@media screen and (min-width: 735px) and (min-height: 845px) {
+@media screen and (min-width: 735px) and (min-height: 931px) {
 
   /* Main area layout adjustments for smaller screens */
   main {
